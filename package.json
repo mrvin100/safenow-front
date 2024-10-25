@@ -33,7 +33,7 @@
     "currency.js": "^2.0.4",
     "date-fns": "^3.6.0",
     "dayjs": "^1.11.13",
-    "framer-motion": "^11.9.0",
+    "framer-motion": "^11.11.10",
     "gray-matter": "^4.0.3",
     "jose": "^5.9.3",
     "lucide-react": "^0.436.0",
