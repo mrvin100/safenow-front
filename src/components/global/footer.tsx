@@ -48,9 +48,7 @@ export const Footer: React.FC = () => {
     <footer className="bg-violet-950 text-white">
       <Spacer small />
       <AppContainer
-        className={cn(
-          `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10`
-        )}
+        className={cn( 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10')}
       >
         <div>
           <Link href={"/"} className="inline-block">

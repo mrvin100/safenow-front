@@ -13,7 +13,7 @@ export const HomeBanner: React.FC = () => {
           Stay <span className="text-primary">Alerted</span>!
         </TypographyH1>
         <Spacer tooSmall />
-        <TypographyP className="mx-auto max-w-3xl text-center text-primary-foreground backdrop-blur-md">
+        <TypographyP className="mx-auto max-w-3xl text-center text-primary-foreground backdrop-blur-sm p-3 rounded-sm">
           Curious about recent event? Click below to explore real-time updates
           on events happening in your area and beyond. Stay ahead with the
           latest informations.

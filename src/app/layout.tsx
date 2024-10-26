@@ -1,4 +1,4 @@
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
 import { ConfirmModal } from "@src/components/modals/confirm-modal";
 import { Providers } from "@src/components/providers/app.provider";
 import { checkEnvVariables } from "@src/helpers/check-env-variables";
