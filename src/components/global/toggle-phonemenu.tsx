@@ -5,6 +5,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { Spacer } from "./spacer";
 
 export interface Navlink {
   label: string;
@@ -71,6 +72,7 @@ export const TogglePhoneMenu: React.FC<MenuProps> = ({ navLinks }) => {
               <div>empty links</div>
             )}
           </nav>
+          <Spacer extraSmall />
         </div>
       )}
     </>

@@ -5,16 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { TogglePhoneMenu } from "./toggle-phonemenu";
 import { Navlink } from "./toggle-phonemenu";
+import { Button } from "@/components/ui/button";
 
 export interface HeaderProps {
   transparentBg?: boolean;
 }
 
 const navLinks: Navlink[] = [
-  { label: "Register", href: "/sign-up" },
-  { label: "About US", href: "/about-us" },
+  { label: "Disasters", href: "/disasters" },
+  { label: "Resources ", href: "/resources" },
   { label: "Contact", href: "/contact" },
-  { label: "desastras", href: "/desastras" },
 ];
 
 export const Header: React.FC<HeaderProps> = ({ transparentBg = true }) => {
@@ -41,7 +41,11 @@ export const Header: React.FC<HeaderProps> = ({ transparentBg = true }) => {
         <nav className="hidden md:flex">
           {navLinks && navLinks.length > 0 ? (
             navLinks.map((navLink) => (
-              <Link key={navLink.label} href={navLink.href} className="mr-2">
+              <Link
+                key={navLink.label}
+                href={navLink.href}
+                className="nav-link md:px-5 text-foreground"
+              >
                 {navLink.label}
               </Link>
             ))
@@ -49,6 +53,9 @@ export const Header: React.FC<HeaderProps> = ({ transparentBg = true }) => {
             <div>empty links</div>
           )}
         </nav>
+        <Button asChild className="order-first md:order-none">
+          <Link href={"/sign-up"}>Register</Link>
+        </Button>
         <TogglePhoneMenu navLinks={navLinks} />
       </AppContainer>
     </header>

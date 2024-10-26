@@ -1,4 +1,4 @@
-import { Header } from "@src/components/global";
+import { Header, Footer } from "@src/components/global";
 
 export default function AppLayout({
   children,
@@ -9,7 +9,7 @@ export default function AppLayout({
     <>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
