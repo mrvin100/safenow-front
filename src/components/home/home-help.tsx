@@ -7,8 +7,8 @@ import { HomeHelpForm } from "./home-helpform";
 export const HomeHelp: React.FC = () => {
   return (
     <section className="bg-card">
+        <Spacer small />
       <AppContainer>
-        <Spacer extraSmall />
         <TypographyH2 className="mx-auto max-w-3xl text-center text-foreground">
           Need <span className="text-primary">Help</span>&nbsp;?
         </TypographyH2>
@@ -27,6 +27,7 @@ export const HomeHelp: React.FC = () => {
           </div>
         </div>
       </AppContainer>
+      <Spacer small />
     </section>
   );
 };

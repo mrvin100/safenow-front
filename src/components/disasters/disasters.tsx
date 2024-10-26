@@ -57,7 +57,7 @@ export const Disasters: React.FC = () => {
             <div className="col-span-4">
               <Alert className="mx-auto">
                 <Terminal className="h-4 w-4" />
-                <AlertTitle>Heads up!</AlertTitle>
+                <AlertTitle>Oups !</AlertTitle>
                 <AlertDescription>no content found !</AlertDescription>
               </Alert>
             </div>
