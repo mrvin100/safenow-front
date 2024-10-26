@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({ transparentBg = true }) => {
       className={cn(
         "py-3 lg:py-5 shadow-md",
         "transition-all duration-300",
-        transparentBg ? "bg-black/0" : "bg-black"
+        transparentBg ? "bg-black/0 text-foreground" : "bg-violet-950 text-card"
       )}
     >
       <AppContainer className="flex justify-between items-center">
@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ transparentBg = true }) => {
               <Link
                 key={navLink.label}
                 href={navLink.href}
-                className="nav-link md:px-5 text-foreground"
+                className="nav-link md:px-5"
               >
                 {navLink.label}
               </Link>
