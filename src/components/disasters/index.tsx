@@ -1,0 +1,1 @@
+export { Disasters as Disasters} from './disasters'
