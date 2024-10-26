@@ -59,3 +59,34 @@
   }
 }
 
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+    html,
+  body {
+    @apply h-full bg-background text-foreground;
+  }
+}
+
+.nav-link {
+  transition: 300ms;
+  @apply text-primary-foreground px-5 py-3 hover:text-primary font-medium
+}
+
+.phone-nav-link {
+  transition: 300ms;
+  @apply text-foreground px-5 py-3 hover:text-primary font-medium block w-full
+}
+
+.modal-content-width {
+  width: calc(100vw - 50px);
+}
+
+@media (min-width: 640px) {
+  .modal-content-width {
+    @apply w-full;
+  }
+}

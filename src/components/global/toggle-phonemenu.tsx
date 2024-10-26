@@ -30,7 +30,7 @@ export const TogglePhoneMenu: React.FC<MenuProps> = ({ navLinks }) => {
         <MenuIcon className="size-6" />
       </Button>
       {show && (
-        <div className="md:hidden absolute top-0 left-0 right-0 shadow-lg bg-card">
+        <div className="md:hidden z-50 absolute top-0 left-0 right-0 shadow-lg bg-card">
           <div className="flex justify-between items-center px-5 py-3">
             <Link href={"/"}>
               <Image
@@ -58,11 +58,14 @@ export const TogglePhoneMenu: React.FC<MenuProps> = ({ navLinks }) => {
           <nav className="flex flex-col gap-3">
             {navLinks && navLinks.length > 0 ? (
               navLinks.map((navLink) => (
-                <Button key={navLink.label} asChild variant={'ghost'}>
-                <Link href={navLink.href}>
-                  {navLink.label}
-                </Link>
-              </Button>
+                <Button
+                  key={navLink.label}
+                  asChild
+                  variant={"ghost"}
+                  onClick={() => setShow(false)}
+                >
+                  <Link href={navLink.href}>{navLink.label}</Link>
+                </Button>
               ))
             ) : (
               <div>empty links</div>

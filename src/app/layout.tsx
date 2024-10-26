@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppinsFont.variable}`}>
+    <html lang="en" className={`${poppinsFont.variable}`}>
+      <body className={`bg-muted antialiased`}>
         <Providers>{children}</Providers>
         <Toaster />
         <ConfirmModal />
